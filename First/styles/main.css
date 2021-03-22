@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 10px;
+    outline: none;
+    background: rgb(0, 0, 0);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.grid-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2em;
+    margin: 3em auto;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:768px) {
+    .grid-6 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar {
+    background: rgb(172, 123, 123);
+    color: white;
+}
+
+.search-bar input {
+    width: 90%;
+    max-width: 90%;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar {
+    flex: 1;
+    margin: 10px 30px;
+}
+
+.logo, .menu {
+    margin: 10px 30px;
+}
+
+
+/* Hero */
+
+.hero {
+    background:url('https://www.cisco.com/c/dam/global/zh_hk/home/cisco-homepage-sb-marquee-1280x480.jpg');
+    color: #fff;
+    text-align: center;
+    height: 360px;
+}
+
+.hero .flex {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 360px;
+    width: 40%;
+    
+}
+
+/* Flash Products */
+
+.card {
+    background-color: rgb(185, 185, 185);
+    padding: 2em 1em;
+    border-radius: 5px;
+    box-shadow: rgb(0, 0, 0);
+}
